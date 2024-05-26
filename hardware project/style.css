@@ -1,0 +1,497 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid #dbdbdb;
+    position: relative;
+  }
+  
+  .box {
+    display: flex;
+    align-items: center;
+    background: hsl(240, 12%, 95%);
+    border-radius: 50px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .box input[type="text"] {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    flex-grow: 1;
+  }
+  
+  .search-button {
+    border: none;
+    background: hsl(212, 100%, 70%);
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .search-button:hover {
+    background: hsl(212, 100%, 60%);
+  }
+  
+  .sign-in-button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #333;
+    text-align: right;
+    margin-top: 10px;
+  }
+  .sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    backdrop-filter: blur(30px);
+    z-index: 999;
+    background-color: #cdfffd;
+    box-shadow:-10px 0 10px #0829e5e4 ;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .sidebar li{
+    width: 100%;
+  }
+  .sidebar a{
+    width: 100%;
+  }
+  @media(max-width:200px){
+    .hideOnMobile{
+      display: none;
+    }
+  }
+  .sign-in-button a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: hsl(210, 36%, 96%);
+  }
+  
+  nav ul li {
+    position: relative;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    background-color: hsl(212, 100%, 80%);
+  }
+  
+  nav ul li ul.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: hsl(210, 36%, 96%);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+  
+  nav ul li:hover ul.submenu {
+    display: block;
+  }
+  
+  nav ul li ul.submenu li a {
+    padding: 10px 20px;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .carousel-caption button {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px 0;
+    transition: background-color 0.3s;
+  }
+  
+  .carousel-caption button:hover {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  
+  .product-grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .product-container {
+    width: calc(25% - 20px);
+    border: 1px solid #dbdbdb;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+  }
+  
+  .product-image-wrapper {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .product-info-container {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .product-seller {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .product-title {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .product-price {
+    font-size: 20px;
+    color: hsl(212, 100%, 50%);
+    font-weight: bold;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .text-content {
+    max-width: 600px; /* Adjust as necessary */
+  }
+  
+  .text-content p {
+    margin-bottom: 10px;
+  }
+  
+  .text-content ul {
+    padding-left: 20px;
+    list-style-type: disc;
+  }
+  
+  .text-content button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .text-content button:hover {
+    background-color: #0056b3;
+  }
+  
+  img.logo {
+    height: 500px;
+    width: 800px;
+  }
+  
+  h5 {
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .social-icons {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .social-icons ul {
+    position: absolute !important;
+   padding-right: 30px !important;
+   left: 90px !important;
+    transform: translate(-50%, -50%) !important;
+    display: flex !important;
+  }
+  .social-icons ul li {
+    list-style: none;
+    margin-right: 10px;
+  }
+  
+  .social-icons ul li a {
+    position: relative !important;
+    display: block !important;
+    width: 100px !important;
+    height: 60px !important;
+    border-radius: 50% !important;
+    background-color: #fff !important;
+    text-align: center !important;
+    box-shadow: 0 10px 8px 0 #1405dee4 !important;
+    transition: .6s !important;
+    justify-content: space-between;
+  }
+  
+  .social-icons ul li a:hover {
+    transform: translateY(-5px);
+    background-color: #0056b3;
+  }
+  
+  .social-icons ul li a i {
+    font-size: 50px;
+  }
+  
+  /* Unique styling for individual social icons */
+  .social-icons ul li.facebook a {
+    background-color: #3b5998; /* Facebook blue */
+  }
+  
+  .social-icons ul li.twitter a:hover {
+    background-color: #1da1f2; /* Twitter blue */
+  }
+  
+  .social-icons ul li.instagram a:hover{
+    background-color: #e1306c; /* Instagram pink */
+  }
+  
+  .social-icons ul li.linkedin a {
+    background-color: #0077b5; /* LinkedIn blue */
+  }
+  
+  .social-icons ul li.whatsapp a {
+    background-color: #25d366; /* WhatsApp green */
+  }
+  .social-icons ul li a {
+    /* Existing styles */
+    animation: pulse 2s infinite alternate; /* Add pulsing animation */
+  }
+  
+  
+  @keyframes pulse {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.2);
+    }
+  }
+  /* Add this CSS to your page.css file */
+  
+  
+  
+  .social-icons {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin-right: 10px; /* Adjust this value to add space between social icons */
+  }
+  
+  .social-icons li:last-child {
+    margin-right: 0; /* Remove margin from the last social icon to avoid extra space */
+  }
+  
+  .social-icons a {
+    color: #fff; /* Change this to your preferred social icon color */
+    font-size: 20px; /* Adjust this value to change the size of social icons */
+    text-decoration: none;
+  }
+  
+  /* Style for hover effect on social icons (optional) */
+  .social-icons a:hover {
+    color: #ffc107; /* Change this to your preferred hover color */
+  }
+  .social-icons {
+      position: fixed;
+      bottom: 20px; /* Adjust the distance from the bottom as needed */
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1000; /* Ensure it's above other elements */
+  }
+  
+  .social-icons ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  }
+  
+  .social-icons ul li {
+      display: inline-block;
+      margin-right: 10px; /* Adjust the distance between icons as needed */
+  }
+  
+  .social-icons ul li:last-child {
+      margin-right: 0;
+  }
+  
+  .social-icons ul li a {
+      display: block;
+      color: #333; /* Adjust the color as needed */
+      font-size: 24px;
+  }
+  .social-icons {
+      position: fixed;
+      bottom: 20px; /* Adjust the distance from the bottom as needed */
+      left: 50%; /* Place them at the horizontal center */
+      transform: translateX(-50%);
+      z-index: 1000; /* Ensure the icons are above other content */
+      background-color: #ffffff; /* Background color of the social icons container */
+      padding: 10px 20px; /* Adjust padding as needed */
+      border-radius: 20px; /* Add some rounded corners */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  }
+  
+  .social-icons ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center; /* Center the icons horizontally */
+  }
+  
+  .social-icons ul li {
+      margin-right: 10px; /* Adjust the space between icons */
+  }
+  
+  .social-icons ul li:last-child {
+      margin-right: 0;
+  }
+  
+  .social-icons ul li a {
+      color: #333; /* Adjust the color of the icons */
+      font-size: 24px; /* Adjust the size of the icons */
+      text-decoration: none; /* Remove underlines */
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+  }
+  
+  footer h5 {
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  footer p {
+    margin-bottom: 10px;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  footer ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /Instagram section/
+  
+  .instagram-section{
+  
+    text-align: center ;
+    padding :50px 20px;
+    background-color:#fff;
+    border-top:1px solid #131f2f;#ddd
+    border-bottom:1px solid #131f2f;
+    margin-bottom:50px;
+  }
+  .instagram-section h2{
+    font-size:20px;
+    margin-bottom:20px;
+    text-align: center ;
+  }
+  .instagram-section h2 span{
+    color: crimson ;
+  }
+  .instagram-gallery{
+    display:flex;
+    justify-content:center;
+    flex-wrap: wrap ;
+    gap:50px;
+  }
+  .instagram-gallery img{
+    width:120px;
+    height:120px;
+    object-fit:cover;
+    border:1px  solid transparent;
+  }
+  @media (max-width: 768px) {
+     .instagram-gallery img {
+        width: 100px; /* Adjust width for smaller screens */
+        height: 100px; /* Adjust height for smaller screens */
+      }
+  }
+  @media (max-width: 480px) {
+      .instagram-gallery img {
+          width: 70px; /* Adjust width for very small screens */
+          height: 70px; /* Adjust height for very small screens */
+  }
+  }    

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME PRICE HARDWARE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <div class="box">
+                <input type="text" placeholder="Search...">
+                <button class="search-button">Search</button>
+            </div>
+            <h1>HOME PRICE HARDWARE</h1>
+            <button class="sign-in-button"><i class="fa fa-user" aria-hidden="true"></i> <a href="sign.html">Sign In</a></button>
+        </div> <hr/>
+        <nav>
+            <ul  class="sidebar">
+                <li onclick= hideSidebar()><a href=""><i class="fa fa-times" aria-hidden="true"></i>
+                </li>
+                <li><a href="page.html">HOME</a></li>
+                <li>
+                    <a href="#">BUILDING&EQUIPMENT</a>
+                    <ul class="submenu">
+                        <li><a href="#">CEMENT</a></li>
+                        <li><a href="#">NAIL</a></li>
+                        <li><a href="#">GYPSUM</a></li>
+                        <li><a href="#">WOOD</a></li>
+                        <li><a href="#">FENCE</a></li>
+                        <li><a href="#">TILES</a></li>
+                        <li><a href="#">GLASS</a></li>
+                        <li><a href="#">STEEL</a></li>
+                        <li><a href="#">STONE</a></li>
+                        <li><a href="#">MDF BOARDS</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">PLUMBING</a>
+                    <ul class="submenu">
+                        <li><a href="#">PVC PIPES</a></li>
+                        <li><a href="#">TOILETS</a></li>
+                        <li><a href="#">SINK</a></li>
+                        <li><a href="#">TAPES</a></li>
+                        <li><a href="#">SINKS</a></li>
+                        <li><a href="#">PPR</a></li>
+                        <li><a href="#">GI</a></li>
+                        <li><a href="#">SHOWERS</a></li>
+                        <li><a href="#">GUTTER SYSTEMS</a></li>
+                        <li><a href="#">WASH BASINS</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">PAINTING</a>
+                    <ul class="submenu">
+                        <li><a href="#">WALL MASTER</a></li>
+                        <li><a href="#">THINNER</a></li>
+                        <li><a href="#">PAINT REMOVER</a></li>
+                        <li><a href="#">PAINTS</a></li>
+                        <li><a href="#">PAINTING ACCESSORIES</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">ELECTRICAL, LIGHTING AND APPLIANCES</a>
+                    <ul class="submenu">
+                        <li><a href="#">CCTV</a></li>
+                        <li><a href="#">CONSUMER UNIT BOX</a></li>
+                        <li><a href="#">LIGHTS AND BULB</a></li>
+                        <li><a href="#">SOCKETS</a></li>
+                        <li><a href="#">EXTENSIONS</a></li>
+                        <li><a href="#">CABLES</a></li>
+                        <li><a href="#">SWITCHES</a></li>
+                        <li><a href="#">CIRCUIT BREAKER</a></li>
+                        <li><a href="#">LAMP</a></li>
+                        <li><a href="#">TAPES</a></li>
+                    </ul>
+                </li>
+                <li><a href="cc.HTML">CONTACT</a></li>
+            </ul>
+            <ul>
+                <li><a href="page.html">HOME</a></li>
+                <li class="hideOnMobile">
+                    <a href="#">BUILDING&EQUIPMENT</a>
+                    <ul class="submenu">
+                        <li><a href="#">CEMENT</a></li>
+                        <li><a href="#">NAIL</a></li>
+                        <li><a href="#">GYPSUM</a></li>
+                        <li><a href="#">WOOD</a></li>
+                        <li><a href="#">FENCE</a></li>
+                        <li><a href="#">TILES</a></li>
+                        <li><a href="#">GLASS</a></li>
+                        <li><a href="#">STEEL</a></li>
+                        <li><a href="#">STONE</a></li>
+                        <li><a href="#">MDF BOARDS</a></li>
+                    </ul>
+                </li>
+                <li class="hideOnMobile">
+                    <a href="#">PLUMBING</a>
+                    <ul class="submenu">
+                        <li><a href="#">PVC PIPES</a></li>
+                        <li><a href="#">TOILETS</a></li>
+                        <li><a href="#">SINK</a></li>
+                        <li><a href="#">TAPES</a></li>
+                        <li><a href="#">SINKS</a></li>
+                        <li><a href="#">PPR</a></li>
+                        <li><a href="#">GI</a></li>
+                        <li><a href="#">SHOWERS</a></li>
+                        <li><a href="#">GUTTER SYSTEMS</a></li>
+                        <li><a href="#">WASH BASINS</a></li>
+                    </ul>
+                </li>
+                <li class="hideOnMobile">
+                    <a href="#">PAINTING</a>
+                    <ul class="submenu">
+                        <li><a href="#">WALL MASTER</a></li>
+                        <li><a href="#">THINNER</a></li>
+                        <li><a href="#">PAINT REMOVER</a></li>
+                        <li><a href="#">PAINTS</a></li>
+                        <li><a href="#">PAINTING ACCESSORIES</a></li>
+                    </ul>
+                </li>
+                <li class="hideOnMobile">
+                    <a href="#">ELECTRICAL, LIGHTING AND APPLIANCES</a>
+                    <ul class="submenu">
+                        <li><a href="#">CCTV</a></li>
+                        <li><a href="#">CONSUMER UNIT BOX</a></li>
+                        <li><a href="#">LIGHTS AND BULB</a></li>
+                        <li><a href="#">SOCKETS</a></li>
+                        <li><a href="#">EXTENSIONS</a></li>
+                        <li><a href="#">CABLES</a></li>
+                        <li><a href="#">SWITCHES</a></li>
+                        <li><a href="#">CIRCUIT BREAKER</a></li>
+                        <li><a href="#">LAMP</a></li>
+                        <li><a href="#">TAPES</a></li>
+                    </ul>
+                </li>
+                <li class="hideOnMobile"><a href="cc.HTML">CONTACT</a></li>
+                <li onclick=showSidebar()><a href=""><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+
+            </ul>
+        </nav>
+    </header> <hr/>
+    <main>
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-target="#carouselExampleCaptions" data-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-target="#carouselExampleCaptions" data-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-target="#carouselExampleCaptions" data-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="drill.jpg" class="d-block w-100" alt="cement">
+                    <div class="carousel-caption d-none d-md-block">
+                        <button>MONTHLY OFFER !!!!!</button><br>
+                        <button>50 PACKS GET 20% DISCOUNT</button>
+                    </div>
+                </div><hr/>
+            </div>
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden"></span>
+            </button>
+        </div><br><br>
+        <h2 class="title">NEW ARRIVAL</h2>
+        <div class="product-grid-container">
+            <div class="product-container">
+                <div class="product-image-wrapper">
+                    <img src="drill.jpg" alt="cement" class="product-image">
+                </div>
+                <div class="product-info-container">
+                    <span class="product-seller"> HOME PRICE Hardware Limited</span><br>
+                    <span class="product-name"> SIMBA CEMENT</span><br>
+                    <span class="product-price">KES 550.00</span><br>
+                    <span class="product-rating">Rating: 4.5 stars</span>
+                    <div class="button-container">
+                        <button>Add to Cart</button>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div class="product-image-wrapper">
+                    <img src="drill.jpg" alt="DRILL" class="product-image">
+                </div>
+                <div class="product-info-container">
+                    <span class="product-seller"> HOME PRICE Hardware Limited</span><br>
+                    <span class="product-name">POWER DRILL</span><br>
+                    <span class="product-price">KES 25,000.00</span><br>
+                    <span class="product-rating">Rating: 4.5 stars</span>
+                    <div class="button-container">
+                        <button>Add to Cart</button>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div> 
+            <div class="product-container">
+                <div class="product-image-wrapper">
+                    <img src="drill.jpg" alt="LOCK" class="product-image">
+                </div>
+                <div class="product-info-container">
+                    <span class="product-seller"> HOME PRICE Hardware Limited</span><br>
+                    <span class="product-name">SMART DOOR LOCK</span><br>
+                    <span class="product-price">KES 26,500.00</span><br>
+                    <span class="product-rating">Rating: 4.5 stars</span>
+                    <div class="button-container">
+                        <button>Add to Cart</button>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div class="product-image-wrapper">
+                    <img src="drill.jpg" alt="circula -saw" class="product-image">
+                </div>
+                <div class="product-info-container">
+                    <span class="product-seller"> HOME PRICE Hardware Limited</span><br>
+                    <span class="product-name">CIRCULAR -SAW</span><br>
+                    <span class="product-price">KES 25,000.00</span><br>
+                    <span class="product-rating">Rating: 4.5 stars</span>
+                    <div class="button-container">
+                        <button>Add to Cart</button>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div><hr/>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="drill.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <button>MONTHLY OFFER !!!!!</button><br>
+                    <button>20 PACKS GET 20% DISCOUNT</button>
+                </div>
+            </div>
+        </div> <hr/>
+        <h2 class="title">BEI ZIKIPANDA ZETU ZINASHUKA!!!!!!</h2>
+        <div class="product-grid-container">
+            <div class="product-container">
+                <div class="product-image-wrapper">
+                    <img src="drill.jpg" alt="door" class="product-image">
+                </div>
+                <div class="product-info-container">
+                    <span class="product-seller"> HOME PRICE Hardware Limited</span><br>
+                    <span class="product-name">MAHOGANY DOORS</span><br>
+                    <span class="product-price">KES 49,000.00</span><br>
+                    <span class="product-rating">Rating: 4.5 stars</span>
+                    <div class="button-container">
+                        <button>Add to Cart</button>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div class="product-image-wrapper">
+                    <img src="drill.jpg" alt="FRAME" class="product-image">
+                </div>
+                <div class="product-info-container">
+                    <span class="product-seller"> HOME PRICE Hardware Limited</span><br>
+                    <span class="product-name">MAHOGANY DOOR FRAME</span><br>
+                    <span class="product-price">KES 6,950.00</span><br>
+                    <span class="product-rating">Rating: 4.5 stars</span>
+                    <div class="button-container">
+                        <button>Add to Cart</button>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div class="product-image-wrapper">
+                    <img src="drill.jpg" alt="MDF" class="product-image">
+                </div>
+                <div class="product-info-container">
+                    <span class="product-seller"> HOME PRICE Hardware Limited</span><br>
+                    <span class="product-name">PATERRN MDF</span><br>
+                    <span class="product-price">KES 6,000.00</span><br>
+                    <span class="product-rating">Rating: 4.5 stars</span>
+                    <div class="button-container">
+                        <button>Add to Cart</button>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div class="product-image-wrapper">
+                    <img src="drill.jpg" alt="GYPSUM" class="product-image">
+                </div>
+                <div class="product-info-container">
+                    <span class="product-seller"> HOME PRICE Hardware Limited</span><br>
+                    <span class="product-name">GYPSUM BOARDS</span><br>
+                    <span class="product-price">KES 1,300.OO</span><br>
+                    <span class="product-rating">Rating: 4.5 stars</span>
+                    <div class="button-container">
+                        <button>Add to Cart</button>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="position-center">
+          <div class="content-wrapper">
+            <div class="text-content"><hr/>
+
+<h4>OUR STORY</h4>
+              <p>
+                Welcome to Home Price Hardware! At Home Price Hardware, we pride ourselves on being your go-to destination for all your hardware and home improvement needs. Whether you're a seasoned DIY enthusiast or a professional contractor, we offer a comprehensive range of products to help you tackle any project with confidence and ease.
+              </p>
+              <p>
+                Why Choose Us?
+                <ul>
+                  <li><strong>Extensive Product Range:</strong> From essential tools and building materials to the latest in home improvement innovations, we stock everything you need to get the job done right. Our inventory includes top-quality brands and a diverse selection of items, ensuring you have access to the best products in the market.</li>
+                  <li><strong>Expert Advice:</strong> Our knowledgeable staff is always ready to assist you. With years of experience in the industry, our team can provide expert guidance, whether you're looking for the right tool for a specific task or need advice on the best materials for your project.</li>
+                  <li><strong>Competitive Prices:</strong> We believe that quality should not come at a premium. At Home Price Hardware, we strive to offer competitive prices on all our products, ensuring you get the best value for your money without compromising on quality.</li>
+                  <li><strong>Convenient Shopping Experience:</strong> Our user-friendly website makes it easy to find what you're looking for, with detailed product descriptions, customer reviews, and helpful buying guides. Plus, our secure online ordering system ensures your purchases are safe and hassle-free.</li>
+                </ul>
+              </p>
+              <p id="more-content" style="display:none;">
+                Additionally, we are committed to serving our community. As a locally-owned business, we support local events, sponsor community projects, and are dedicated to building lasting relationships with our customers. Visit us today to explore our wide selection of hardware and home improvement products, both online and in-store.
+              </p>
+              <button id="read-more-button">READ MORE</button>
+            </div>
+            <img src="drill.jpg" class="logo" alt="Logo">
+          </div>
+        </div> <hr/>
+        <!--instagram section -->
+<div class="instagram-section">
+    <h2>FOLLOW <span>US ON</span> INSTAGRAM </h2>
+    <div class="instagram-gallery">
+      <img src="drill.jpg"alt="Instagram-image1">
+      <img src="drill.jpg"alt="Instagram-image2">
+      <img src="drill.jpg"alt="Instagram-image3">
+      <img src="drill.jpg"alt="Instagram-image4">
+      <img src="drill.jpg"alt="Instagram-image5">
+    </div>
+  </div>
+  <hr/>
+  <!----end of Instagram section --->
+    </main>
+    
+        <div class="social-icons">
+            
+            <ul>
+                <li>
+                    <a href="" target="_blank"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </li>
+                <li>
+                    <a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+                </li>
+            </ul>
+        </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h5>About Us</h5>
+                    <p>Welcome to HOME PRICE Hardware! Your go-to destination for all your hardware and home improvement needs.</p>
+                </div>
+                <div class="col">
+                    <h5>Contact Information</h5>
+                    <p>Address: 123 Main Street, City, Country</p>
+                    <p>Email: info@homepricehardware.com</p>
+                    <p>Phone: +123-456-7890</p>
+                </div>
+                <div class="col">
+                    <h5>Follow Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="new.js">
+      </script>
+      
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</body>
+</html>
